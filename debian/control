@@ -1,0 +1,31 @@
+Source: ruby-tins
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper (>= 12~),
+               gem2deb,
+               ruby-sync,
+               ruby-test-unit
+Standards-Version: 4.5.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-tins.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-tins
+Homepage: https://github.com/flori/tins
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+Testsuite: autopkgtest-pkg-ruby
+
+Package: ruby-tins
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-sync,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: useful tools library in Ruby
+ All the stuff that isn't good/big enough for a real library.
+ .
+ A few sample tools:
+  * Round - A bit more versatile rounding for Ruby.
+  * Null - Implementation of the null object pattern in Ruby.
+  * SecureWrite - Write to a file atomically.

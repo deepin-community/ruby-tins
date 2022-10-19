@@ -1,0 +1,40 @@
+ruby-tins (1.1.0-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Cédric Boutillier ]
+  * Bump debhelper compatibility level to 9
+  * Remove version in the gem2deb build-dependency
+  * Use https:// in Vcs-* fields
+  * Use https:// in Vcs-* fields
+  * Bump Standards-Version to 3.9.7 (no changes needed)
+  * Run wrap-and-sort on packaging files
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Lucas Kanashiro ]
+  * Add b-d on ruby-sync, it is not bundled in ruby anymore (Closes: #952088)
+  * Update VCS urls to point to salsa
+  * Bump debhelper compatibility level to 12
+  * d/control: rules does not require root
+  * Declare compliance with Debian Policy 4.5.0
+  * d/copyright: use secure urls in Format and Source fields
+  * d/watch: update to use gemwatch.debian.net
+  * Enable autodep8 ruby tests
+
+ -- Lucas Kanashiro <lucas.kanashiro@canonical.com>  Wed, 26 Feb 2020 13:50:05 -0300
+
+ruby-tins (1.1.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Bump standards version to 3.9.5 (no changes)
+  * Bump gem2deb build dep to >= 0.7.5~ (ruby 2.x)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 13 Apr 2014 17:10:38 +0530
+
+ruby-tins (0.6.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #693165)
+
+ -- Praveen Arimbrathodiyil <praveen@debian.org>  Wed, 07 Nov 2012 00:31:11 +0530
